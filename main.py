@@ -10,6 +10,16 @@ import math
 st.write('<style>div.block-container{padding-top:2rem;}</style>', unsafe_allow_html=True)
 st.write('<style>div.css-hxt7ib{padding-top:1rem;padding-bottom:3rem;}</style>', unsafe_allow_html=True)
 
+# Remove burger option
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
+
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 st.write("""
 # Health Detector
 This app predicts health using **Naive Bayes**!
